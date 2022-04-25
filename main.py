@@ -4,6 +4,9 @@ from morse_code_table import morse_code_table
 from toolbox import *
 import time
 
+'''
+Initiate video feed
+'''
 capture = cv2.VideoCapture(0)
 
 mp_drawing_utilities = mp.solutions.drawing_utils
@@ -25,6 +28,10 @@ morse_sequence = ""
 parsed_letter = ""
 prev_time = 0
 
+
+'''
+Main program while loop
+'''
 while True:
     
     success, feed = capture.read()
