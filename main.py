@@ -75,7 +75,6 @@ while True:
                     blink_duration += 1
                 else:
                     if (blink_duration > (fps * 0.6)):
-                        print(fps)
                         morse_sequence += "_"
                         blink_duration = 0
                         
@@ -95,9 +94,8 @@ while True:
                             no_blink_duration = 0                            
 
     complete_word = ''.join(word)
-    cv2.putText(scaled, str(int(fps)), (50,50),cv2.FONT_HERSHEY_COMPLEX,2,(255,0,0),2)
-    cv2.putText(scaled, str(complete_word), (80,100),cv2.FONT_HERSHEY_COMPLEX,2,(0,255,0),2)
-    cv2.imshow("Image", scaled)
+    cv2.putText(scaled, str(complete_word), (80,100), cv2.FONT_HERSHEY_COMPLEX, 2, (199, 86, 74), 2)
+    cv2.imshow("Farzan's Morse Code Interpreter", scaled)
     key = cv2.waitKey(1)
 
     '''
