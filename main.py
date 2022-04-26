@@ -55,10 +55,7 @@ while True:
             left_ear = abs((face_landmark.landmark[160].x - face_landmark.landmark[144].x) ** 2 - (face_landmark.landmark[160].y - face_landmark.landmark[144].y) ** 2) + abs((face_landmark.landmark[158].x - face_landmark.landmark[153].x) ** 2 - (face_landmark.landmark[158].y - face_landmark.landmark[153].y) ** 2) / abs(((face_landmark.landmark[33].x - face_landmark.landmark[133].x) ** 2) - ((face_landmark.landmark[33].y - face_landmark.landmark[133].y) ** 2)) 
             right_ear = abs((face_landmark.landmark[385].x - face_landmark.landmark[380].x) ** 2 - (face_landmark.landmark[385].y - face_landmark.landmark[380].y) ** 2 ) + abs((face_landmark.landmark[387].x - face_landmark.landmark[373].x) ** 2- (face_landmark.landmark[387].y - face_landmark.landmark[373].y) ** 2 ) / abs(((face_landmark.landmark[362].x - face_landmark.landmark[263].x) ** 2) - ((face_landmark.landmark[362].y - face_landmark.landmark[263].y) ** 2)) 
 
-            if (count > 10):
-                count = 0
-            else:
-                count += 1
+            count = 0 if (count > 10) else (count + 1)
           
             if (len(left_ear_prev) > 10):
                 left_ear_prev[count] = left_ear
