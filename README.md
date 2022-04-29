@@ -6,7 +6,7 @@ The Morse Code Blink Detector reads the video feed from your webcam and translat
 
 <h3>Description</h3>
 
-> This project is built upon OpenCV, the world-renowned and widely utilzied computer vision library and the <i>Python</i> programming language. The program begins by identifying the marking the face in the video feed, and proceeeds to calculate the <i><b>Eye Aspect Ratio (EAR)</b></i> to determine whether either eye is closed or not at any given moment. If a closed pair of eyes is detected, the program times the duration of the blink, its corresponding Morse Code value.
+> This project is built upon OpenCV, the world-renowned and widely utilzied computer vision library and the <i>Python</i> programming language. The program begins by identifying the marking the face in the video feed, and proceeeds to calculate the <i><b>Eye Aspect Ratio (EAR)</b></i> to determine whether either eye is closed or not at any given moment. If a closed pair of eyes is detected, the program times the duration of the blink, and parses the corresponding Morse Code value.
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
